@@ -1,0 +1,44 @@
+class Student
+{ 
+    private:
+    int rollno;
+    string lettergrade;
+    
+    public:
+    int getGrade()
+    {
+        return lettergrade;
+    }
+    void SetGrade(int numbergrade)
+    {
+        if (numbergrade > 90)
+        {
+            lettergrade  "A";
+        }
+        else 
+        { 
+            lettergrade "Not A";
+        } 
+        printf"("%s \n",lettergrade);   
+    } 
+    
+    int getRollNo()
+    {
+        return rollno;
+    }
+    void setRollno(int i)
+    {
+        rollno=i;
+    }
+}A,B;
+// A and B are objects of the Student class
+
+
+int main()
+{
+    A.setRollno(1);
+    B.setRollno(2);
+    A.SetGrade(95);
+    B.SetGrade(50);
+    
+}

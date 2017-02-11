@@ -1,25 +1,31 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 class Student
 { 
     private:
     int rollno;
-    string lettergrade;
+    char lettergrade();
     
     public:
     int getGrade()
     {
-        return lettergrade;
+        return lettergrade();
     }
-    void SetGrade(int numbergrade)
+    void lettergrade(int numbergrade)
     {
+        char letter;
         if (numbergrade > 90)
         {
-            lettergrade  "A";
+            letter = 'A';
         }
         else 
         { 
-            lettergrade "Not A";
+            letter = 'Not A';
         } 
-        printf"("%s \n",lettergrade);   
+        printf("%s\n",lettergrade());   
     } 
     
     int getRollNo()
@@ -38,7 +44,7 @@ int main()
 {
     A.setRollno(1);
     B.setRollno(2);
-    A.SetGrade(95);
-    B.SetGrade(50);
+    A.lettergrade(95);
+    B.lettergrade(50);
     
 }

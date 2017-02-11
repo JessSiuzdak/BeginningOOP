@@ -7,16 +7,16 @@ class Student
 { 
     private:
     int rollno;
-    char lettergrade();
+    string lettergrade();
     
     public:
-    int getGrade()
+    string getGrade()
     {
         return lettergrade();
     }
     void lettergrade(int numbergrade)
     {
-        char letter;
+        string letter;
         if (numbergrade > 90)
         {
             letter = 'A';
@@ -25,7 +25,7 @@ class Student
         { 
             letter = 'Not A';
         } 
-        printf("%s\n",lettergrade());   
+        cout << letter;   
     } 
     
     int getRollNo()
